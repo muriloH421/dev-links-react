@@ -1,0 +1,16 @@
+#profile {
+    text-align: center;
+    padding: 24px;
+  }
+  
+  /* modificaçoes da img e texto do perfil */
+  #profile img {
+    width: 112px;
+    border-radius: 50%;
+    border: 4px solid rgba(112, 112, 112);
+  }
+  #profile p {
+    margin-top: 8px;
+    font-weight: 500;
+    line-height: 24px;
+  }

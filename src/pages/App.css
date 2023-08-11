@@ -1,8 +1,81 @@
-.react{
-    text-align: center;
-    font-size: 50pt;
-    font-weight: bold;
-    background: red;
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Open+Sans:ital,wght@1,500&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+:root {
+  --bg-url: url(../img/Background.png);
+  --text-color: #fff;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.5);
+  --switch-bg-url: url(../img/moonStars.svg);
+  --highligth-color: rgba(255, 255, 255, 0.1);
+}
+
+.ligth {
+  --bg-url: url(../img/bg-desktop-light.jpg);
+  --text-color: #000;
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.5);
+  --switch-bg-url: url(../img/sun.svg);
+  --highligth-color: rgba(0, 0, 0, 0.1);
+}
+/* modificaçoes do body */
+body * {
+  font-family: "inter", sans-serif;
+  color: var(--text-color);
+}
+body {
+  background: var(--bg-url) no-repeat top center / cover;
+  height: 100vh;
+}
+/* modificaçoes container */
+#container {
+    width: 100%;
+    max-width: 500px;
+    margin: 56px auto 6px;
+    padding: 0 24px;
+  }
+  /* switch button*/
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+  }
+  
+  #switch button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 0;
+    background: #fff var(--switch-bg-url) no-repeat center;
+  
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    animation: slide-out 0.2s;
+  }
+  #switch button:hover {
+    outline: 8px solid var(--highligth-color);
+  }
+  
+  .ligth #switch button {
+    animation: slide-in 0.2s forwards;
+  }
+  
+  #switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }

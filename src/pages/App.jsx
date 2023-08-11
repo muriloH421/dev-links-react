@@ -30,16 +30,14 @@ const App = () => {
         <div id="links">
           <ul>
             <Links link={"https://github.com"}>GitHub</Links>
-            <Links link={"#"}>Instagram</Links>
-            <Links link={"#"}>Linkedin</Links>
-            <Links link={"#"}>Project</Links>
+            <Links link={"https://www.instagram.com/murilo_basilio1142/"}>Instagram</Links>
+            <Links link={"https://www.linkedin.com/in/basilio-murilo-027b69287"}>Linkedin</Links>
           </ul>
         </div>
         <div id="socialLinks">
           <SocialLinks href={"#"} icon={"logo-github"} />
           <SocialLinks href={"#"} icon={"logo-instagram"} />
           <SocialLinks href={"#"} icon={"logo-linkedin"} />
-          <SocialLinks href={"#"} icon={"logo-github"} />
         </div>
         <Footer >Murilo</Footer>
       </div>
